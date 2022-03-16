@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html title="OSS" lang="en">
+
+<head>
+    <title>OSS Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+
+<body>
+
+    <div class="modal--fade CookiesModal" id="modal" aria-hidden="true">
+        <div class="modal-inner">
+            <div class="CookiesModal-title" id="modal-label">Gestion des cookies</div>
+            <div class="modal-content">
+                <p>Je vous jure, on a vraiment pas de cookies.</p>
+                <p>Mais cette boîte de dialogue est là pour vous aider à les gérer quand même.</p>
+                <div class="Cookies" alt="Blabla">
+                    <a href="#!" class="CookiesModal-button Button">Accepter les cookies</a>
+                    <a href="#!" class="CookiesModal-button Button">Refuser les cookies</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#!" class="modal-close" title="Fermer la boîte de dialogue" data-close="Fermer" data-dismiss="modal">
+			?
+		</a>
+    </div>
+
+    <div class="Site">
+
+        <a href="#recherche">Aller à la recherche</a>
+        <a href="#contenu">Aller au contenu</a>
+        <a href="#pied">Aller au pied de page</a>
+
+        <div class="Header">
+            <h3 class="Header-title">
+                <a href="index.html" alt="BLA">
+                    <img src="../images/oss117.png" width="300" alt="BLAH" class="Header-logo">
+                </a>
+            </h3>
+
+            <form action="#" class="Search">
+                <input type="text" placeholder="Rechercher">
+                <button type="button" title="Rechercher">
+					<svg
+						viewBox="0 0 490 490"
+						width="16"
+						height="16"
+					>
+						<path
+							fill="none"
+							stroke="#000"
+							stroke-width="36"
+							stroke-linecap="round"
+							d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"
+						/>
+					</svg>
+				</button>
+            </form>
+        </div>
+
+        <ul class="Menu">
+            <li>
+                <a href="index.html">Introduction</a>
+            </li>
+            <li>
+                <a href="synopsis.html">Synopsis</a>
+            </li>
+            <li>
+                <a href="distribution.html">Distribution</a>
+            </li>
+            <li>
+                <a href="distinctions.html">Distribution</a>
+            </li>
+            <li>
+                <a href="livredor.html">Livre d'or</a>
+            </li>
+        </ul>
+        <h3 id="livredor">Livre d'or</h3>
+
+        <div class="GoldenBook">
+            <button class="GoldenBook-toggle">Afficher le livre d'or</button>
+
+            <form action="#" id="livredor-form" class="GoldenBook-form Hidden">
+                <div>
+                    <div>Nom</div>
+                    <input required name="nom" type="text" title="Nom">
+                </div>
+                <div>
+                    <div>Adresse e-mail</div>
+                    <input name="email" type="text" title="email">
+                </div>
+                <div>
+                    <div>Message</div>
+                    <textarea type="textarea" required name="message" title="message"></textarea>
+                </div>
+
+                <button type="button">Envoyer le message</button>
+            </form>
+            <div class="RetoursModal">
+                <h3>Retours sur la boîte de dialogue de gestion de cookies</h3>
+                <p>En vous basant sur le <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal">design pattern ARIA "Dialog (Modal")</a>, notez ici les problèmes d'accessibilité relevés sur la boîte de dialogue de cookies.</p>
+            </div>
+        </div>
+        <footer class="Footer">
+            <div class="Footer-columns">
+                <div>
+                    <h5>Bibliographie</h5>
+                    Émilie de la Hosseraye, Jean-François Halin et Pierre Duclos, <em>OSS 117 Le Caire, nid d'espion&nbsp;: le roman-photo du film</em>, SW-Télémaque, 2006, ISBN 275330033X
+                </div>
+                <div>
+                    <h5>Articles wikipédia</h5>
+                    <ol>
+                        <li>
+                            <a href="https://fr.wikipedia.org/wiki/Hubert_Bonisseur_de_La_Bath">Hubert Bonisseur de La Bath</a>
+                        </li>
+                        <li>
+                            <a href="https://fr.wikipedia.org/wiki/Jean_Dujardin">Jean Dujardin</a>
+                        </li>
+                        <li>
+                            <a href="https://fr.wikipedia.org/wiki/Michel_Hazanavicius">Michel Hazanavicius</a>
+                        </li>
+                        <li>
+                            <a href="https://fr.wikipedia.org/wiki/OSS_117"><em>OSS 117</em> (série littéraire)</a>
+                        </li>
+                        <li>
+                            <em><a href="https://fr.wikipedia.org/wiki/OSS_117_:_Rio_ne_r%C3%A9pond_plus">OSS 117 : Rio ne répond plus</a></em>, suite du film
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h5>Liens externes</h5>
+                    <div class="Footer-externalLinks">
+                        <div>
+                            <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=61099.html">Allociné</a>
+                        </div>
+                        <div>
+                            <a href="https://www.cnc.fr/professionnels/visas-et-classification/113138">Centre national du cinéma et de l'image animée</a>
+                        </div>
+                        <div>
+                            <a href="https://www.unifrance.org/film/26385">Unifrance</a>
+                            <div>
+                            </div>
+                            <a href="https://www.imdb.com/&amp;id=tt0464913">Internet Movie Database</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="Footer-from">Contenu tiré de <a href="https://fr.wikipedia.org/wiki/OSS_117_:_Le_Caire,_nid_d%27espions">Wikipédia</a></p>
+        </footer>
+    </div>
+
+    <div class="Cookies">
+        <p>On n'utilise pas de cookies, mais pour faire genre, on affiche quand même une bannière qui vous demande de les accepter.</p>
+
+        <a href="#modal" class="Button">Gérer les cookies</a>
+    </div>
+
+    <script src="../javascripts/script.js"></script>
+
+</body>
+<script src="../javascripts/script.js"></script>
+
+</html>
