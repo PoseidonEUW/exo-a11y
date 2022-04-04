@@ -10,9 +10,12 @@
 		class="modal--fade CookiesModal"
 		id="modal"
 		aria-hidden="true"
+		role="dialog"
+		aria-modal="true"
+		aria-labelledby="modal-label"
 	>
 		<div class="modal-inner">
-			<div class="CookiesModal-title" id="modal-label">Gestion des cookies</div>
+			<h1 class="CookiesModal-title" id="modal-label">Gestion des cookies</h1>
 			<div class="modal-content">
 				<p>Je vous jure, on a vraiment pas de cookies.</p>
 				<p>Mais cette boîte de dialogue est là pour vous aider à les gérer quand même.</p>
@@ -27,10 +30,11 @@
 			href="#!"
 			class="modal-close"
 			title="Fermer la boîte de dialogue"
+			aria-label="Fermer la boîte de dialogue"
 			data-close="Fermer"
 			data-dismiss="modal"
 		>
-			?
+			<span aria-hidden="true">?</span>
 		</a>
 	</div>
 
